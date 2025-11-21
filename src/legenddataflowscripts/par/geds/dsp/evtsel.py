@@ -99,6 +99,7 @@ def par_geds_dsp_evtsel() -> None:
         required=False,
     )
 
+    argparser.add_argument("--channel", type=str, help="Channel to process; required if --raw-cal-curve is set", required=False)
     argparser.add_argument("--log", help="log_file", type=str)
 
     argparser.add_argument(
